@@ -2761,7 +2761,7 @@ bool InitBlockIndex() {
         //   vMerkleTree: 97ddfbbae6
 
         // Genesis block
-        const char* pszTimestamp = "NY Times 05/Oct/2011 Steve Jobs, Apple’s Visionary, Dies at 56";
+        const char* pszTimestamp = "02/May/2013 Jeff Hanneman, Slayer’s Heart and Soul, Dies at 49";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -2773,13 +2773,15 @@ bool InitBlockIndex() {
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1317972665;
+//        block.nTime    = 1317972665;
+        block.nTime    = 1386776408;
         block.nBits    = 0x1e0ffff0;
         block.nNonce   = 2084524493;
 
         if (fTestNet)
         {
-            block.nTime    = 1317798646;
+//            block.nTime    = 1317798646;
+            block.nTime    = 1386776017;
             block.nNonce   = 385270584;
         }
 
