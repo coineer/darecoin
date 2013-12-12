@@ -2761,7 +2761,7 @@ bool InitBlockIndex() {
         //   vMerkleTree: 97ddfbbae6
 
         // Genesis block
-        const char* pszTimestamp = "02/May/2013 Jeff Hanneman, Slayer’s Heart and Soul, Dies at 49";
+        const char* pszTimestamp = "02/May/2013 Jeff Hanneman, Heart and Soul of Slayer, Dies at 49. Thanks for the years of shredding! RIP";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
